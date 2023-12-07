@@ -1,0 +1,93 @@
+
+
+
+Apparently I'm outlining the presentation here:
+
+fictionalized PROB STMT OR CLIENTS USE CASE,
+"preliminary study"
+
+
+
+PROB STMT AND SE CASE
+
+----predictive btwn 2 academic over/depts?---
+Customized Research Paper Recommendations:
+	Pitch: Publishers, academic databases, and research paper platforms can leverage your predictive model to enhance their recommendation systems. By suggesting papers based on accurate field predictions, these platforms can provide users with personalized and highly relevant content recommendations, improving the overall user experience.
+
+
+
+
+
+FOR THE DATASET SECTION
+
+A collection of text is a document.
+	You can think of a document as a row in your feature matrix.
+A collection of documents is a corpus.
+	You can think of your full dataframe as the corpus.
+
+	another thing to help summarize what's going on:
+		https://huggingface.co/datasets/arxiv_dataset
+
+	lisapaul@malumeum ~ $echo "50000 * 48" | bc
+	2400000
+	WHICH MEANS about 2.5 million papers here	
+
+	re the chunking-files going much faster than expected, and the size of things
+		https://chat.openai.com/share/04749f68-8643-4855-b198-fecedb1c8f88
+
+
+	Also, how big were my train/valid
+	I chose 2 consecutive files within the -aa through -bv chunks
+		specifically: ___ and ___ 
+	Non-consec bc original JSON sorted by pub date * footnote 
+		(https://info.arxiv.org/help/arxiv_identifier_for_services.html)
+	thus to partially mitigate any effects of date
+
+
+
+PREPROCESSING AND EDA
+
+- removed multi-cat rows
+- tokenized (split into words)
+- added a few columns of numerical info 
+
+
+
+MODELs DID:
+
+
+Majority Class Baseline:
+For classification tasks, predicting the majority class for every sample is a simple baseline. This is useful when dealing with imbalanced datasets.
+
+	The baseline serves as a benchmark, and your machine learning model should ideally outperform it. If your complex model cannot beat a simple baseline, it suggests that there may be issues with your approach, and you might need to reevaluate your feature engineering, model selection, or hyperparameter tuning.
+
+
+per ChatGPT:
+	If you're working with label-encoded categorical variables and you're looking for a simple yet effective machine learning model, decision tree-based models often work well and are easy to interpret. 
+
+	Decision Tree, Random Forest
+
+
+
+MODEL PERFARMANCE
+
+
+CONCLUSIONS for current prelim study
+RECOMMENDATIONS for the later comprehensive project 
+Future Work:
+	To improve my abstract-analysis model:
+		more data, bc 0.02 of what I downloaded was used in prelim study
+	Adjacent project: analyze fulltexts along the same lines
+		why? suggest other publications/conferences 
+			to authors&institutions
+
+
+
+
+
+
+
+
+
+
+
