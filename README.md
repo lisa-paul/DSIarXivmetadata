@@ -74,10 +74,9 @@ This is an alphabetical list of the repository's directory and file structure.
 
 <br><hr><br>
 ## Methods
-- baseline/benchmark prediction: the "most common" class
-- Preliminary study design is based on a class lesson:
+** baseline/benchmark prediction:**  the "most common" class
+> Preliminary study design is very simple:
 	- Pipelining a simple CountVectorizer, plus one basic (Multinomial Naive Bayes) model, into a GridSearch
-		
 > These simple preliminary Models, may give a fast/intuitive answer for clients
 
 - Evaluation metrics and criteria
@@ -88,7 +87,11 @@ This is an alphabetical list of the repository's directory and file structure.
 
 > Current baseline prediction accuracy is approximately 26%, reflecting the inherent imbalance in the original dataset, but this accuracy may vary across different data chunks and cannot be guaranteed for future research imports.
 
->Additionally, the NLP model, in its current state, did not yield useful results.
+> Additionally, the NLP model, in its current state, did not yield useful results. 
+
+> Next Steps before Project Expansion:
+  1. need to fix code errors
+  2. Recommend grouping categories into "most common ten" vs "other", to binarize the prediction in order to speed up results
 
 <br><hr><br>
 ## Sources
