@@ -74,12 +74,14 @@ This is an alphabetical list of the repository's directory and file structure.
 
 <br><hr><br>
 ## Methods
-** baseline/benchmark prediction:**  the "most common" class
-> Preliminary study design is very simple:
-	- Pipelining a simple CountVectorizer, plus one basic (Multinomial Naive Bayes) model, into a GridSearch
+
+> The baseline/benchmark prediction is just the modal category.
+
+> Preliminary study design is very simple: pipelining a simple CountVectorizer, plus one basic (Multinomial Naive Bayes) model, into a GridSearch
+
 > These simple preliminary Models, may give a fast/intuitive answer for clients
 
-- Evaluation metrics and criteria
+### Evaluation metrics and criteria
 > We focus on fundamental metrics like accuracy, precision, recall, and F1 score. As we progress to our pipeline/GridSearch models, these metrics will remain crucial, with additional emphasis on fine-tuning hyperparameters to optimize performance and achieve the best predictive outcomes.
 
 <br><hr><br>
@@ -97,4 +99,3 @@ This is an alphabetical list of the repository's directory and file structure.
 ## Sources
 - [arXiv Dataset](https://www.kaggle.com/dsv/7053634)
 - [Split JSON into multiple files](https://stackoverflow.com/a/44216101)
-- 
